@@ -6,7 +6,7 @@ Project       :  Master's Thesis
 Filename      :  dds.sv
 Author        :  Madeline Crowley
 Created       :  11/09/2025 14:27:38
-Last Modified :  11/09/2025 14:34:17
+Last Modified :  11/09/2025 15:26:12
 Copyright (c) :  Madeline (Liam) Crowley
 
 INPUTS        :
@@ -29,7 +29,9 @@ module dds #(
     input  wire                  n_RST,
     output wire [  BITWIDTH-1:0] sig_out
 );
-  wire [PA_OUT_WIDTH-1:0] phase_val;
+  wire [PA_OUT_WIDTH-1:0] phase_value;
+  wire [BITWIDTH-1:0]     pulse_out;
+    
   pa #(
       .PA_WIDTH     (PA_WIDTH),
       .TUNE_WIDTH   (TUNE_WIDTH),

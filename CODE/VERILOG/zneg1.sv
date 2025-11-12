@@ -6,7 +6,7 @@ Project       :  Master's Thesis
 Filename      :  zneg1.sv
 Author        :  Madeline Crowley
 Created       :  10/22/2025 17:12:45
-Last Modified :  10/22/2025 17:16:50
+Last Modified :  11/09/2025 15:23:22
 Copyright (c) :  Madeline (Liam) Crowley
 
 INPUTS        :
@@ -22,7 +22,7 @@ module zneg1 #(
 ) (
     input                 clk,
     input  [BITWIDTH-1:0] sig_in,
-    output [BITWIDTH-1:0] sig_out
+    output reg [BITWIDTH-1:0] sig_out
 );
 
   always @(posedge clk) begin

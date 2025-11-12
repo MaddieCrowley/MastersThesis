@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1762991741" />
+    <testcase name="filter" classname="main" file="/home/madeline/Git/PERSONAL/MastersThesis/CODE/PYTHON/main.py" lineno="22" time="7.4219970703125" sim_time_ns="990.0" ratio_time="133.38727981447673" />
+  </testsuite>
+</testsuites>
