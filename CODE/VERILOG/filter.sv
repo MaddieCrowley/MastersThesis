@@ -6,7 +6,7 @@ Project       :  MasterThesis
 Filename      :  filter.sv
 Author        :  Madeline Crowley
 Created       :  10/22/2025 16:59:34
-Last Modified :  11/09/2025 15:28:17
+Last Modified :  11/12/2025 21:43:39
 Copyright (c) :  Madeline (Liam) Crowley
 
 INPUTS        :
@@ -28,16 +28,19 @@ module filter #(
     input                        clk,
                                  n_RST,
     input  wire [TUNE_WIDTH-1:0] tuning_word,
-    output reg  [  BITWIDTH-1:0] sig_out
+    output wire [  BITWIDTH-1:0] sig_out
 );
+    
+  assign sig_out = sum_out;
 
-  wire [BITWIDTH-1:0] sum_out = sah_out + sig_in;
+  wire [BITWIDTH-1:0] sum_out =  sig_in-sah_out;
   wire [BITWIDTH-1:0] zneg1_out;
   wire [BITWIDTH-1:0] sah_out;
   wire [BITWIDTH-1:0] dds_out;
   wire                SEL;
 
 
+    //ADD GENERATE FOR LONGER DELAY
   zneg1 #(
       .BITWIDTH(BITWIDTH)
   ) I_ZNEG1 (
