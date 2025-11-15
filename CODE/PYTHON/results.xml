@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1763002980" />
-    <testcase name="filter" classname="main" file="/home/madeline/Git/PERSONAL/MastersThesis/CODE/PYTHON/main.py" lineno="25" time="3.317962646484375" sim_time_ns="3799620.0" ratio_time="1145166.5991556523" />
+    <property name="random_seed" value="1763231036" />
+    <testcase name="filter" classname="verification" file="/home/madeline/Git/PERSONAL/MastersThesis/CODE/PYTHON/verification.py" lineno="25" time="2.850186824798584" sim_time_ns="3799620.0" ratio_time="1333112.6110543683" />
   </testsuite>
 </testsuites>

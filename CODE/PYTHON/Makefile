@@ -6,5 +6,5 @@ VERILOG_SOURCES += $(PWD)/../VERILOG/DDS/*.sv
 
 COCOTB_TOPLEVEL = filter
 
-COCOTB_TEST_MODULES = main
+COCOTB_TEST_MODULES = verification
 include $(shell cocotb-config --makefiles)/Makefile.sim
