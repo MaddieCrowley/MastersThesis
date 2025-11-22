@@ -13,6 +13,6 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(
         FILTER
         main.cpp
-        sah.cpp
-        sah.h
+        filter.cpp
+        filter.h
 )
